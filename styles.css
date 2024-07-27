@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-logo {
+    width: 100%;
+    border-bottom: 3px solid white;
+    display: block;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(145, 141, 141, 0.5);
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: white;
+}
+
+.figure-img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.info {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.info-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.info-desc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.3;
+}
+
+.power {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.power:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.power-intro {
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.power-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.power-word {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.power-desc {
+    margin-top: 0.5rem;
+}
+
+.power-img-wrapper {
+    height: 15rem;
+}
+
+.power-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 5rem;
+    display: block;
+    margin: auto;
+}
+
+.footer-link {
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    color: white;
+}
+
+@media(min-width: 961px) {
+    header {
+        display: flex;
+        min-height: 10vh;
+        padding: 0 10rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo {
+        border-bottom: none;
+        width: 20rem;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .nav-link:hover {
+        color: red;
+    }
+
+    figure {
+        height: 70vh;
+    }
+
+    .figure-img {
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .info {
+        padding: 1rem 11rem;
+    }
+
+    .info-intro {
+        min-height: calc(20vh - 1rem);
+    }
+
+    .info-subtitle {
+        margin-top: 1rem;
+    }
+
+    .info-desc {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .power {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 25rem;
+        align-items: center;
+    }
+
+    .power-intro {
+        padding: 3rem;
+    }
+
+    .power-desc {
+        font-size: 1.3rem;
+    }
+
+    .power-img-wrapper {
+        height: 25rem;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-link:hover {
+        color: blue;
+    }
+}
